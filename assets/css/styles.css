@@ -107,6 +107,7 @@ h2 {
 }
 
 #events .table {
+  -webkit-box-shadow: none;
   box-shadow: none;
   color: var(--primary-color);
   background-color: transparent;
@@ -180,6 +181,7 @@ h2 {
   color: var(--light-highlight-color);
   font-size: 2rem;
   margin-right: 1rem;
+  -webkit-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
 
@@ -195,20 +197,9 @@ h2 {
 
 #contact .table-dark * {
   background-color: transparent;
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
-
-/* Grid visualisation CSS for testing */
-
-/* .container,
-.row {
-  border: 2px solid black;
-}
-
-.col-12 {
-  border: 2px solid white;
-  background-color: lightgray;
-} */
 
 /* Media Queries */
 
