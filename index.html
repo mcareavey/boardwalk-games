@@ -167,7 +167,8 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="card">
-                        <img src="assets/images/services-3.webp" class="card-img-top">
+                        <img src="assets/images/services-3.webp" class="card-img-top"
+                            alt="People playing board games together in a large room">
                         <div class="card-body">
                             <h3 class="card-title sub-heading-color">Events</h3>
                             <p class="card-text">
@@ -343,6 +344,19 @@
 
     <!-- Font Awesome link -->
     <script src="https://kit.fontawesome.com/5ec5e6d1dd.js" crossorigin="anonymous"></script>
+
+    <!-- Collapse the mobile navbar when a navigation link is selected -->
+    <script>
+        const navbarCollapse = document.querySelector(".navbar-collapse");
+
+        document
+            .querySelectorAll(".navbar-collapse .nav-link")
+            .forEach((link) => {
+                link.addEventListener("click", () => {
+                    bootstrap.Collapse.getOrCreateInstance(navbarCollapse).hide();
+                });
+            });
+    </script>
 </body>
 
 </html>
