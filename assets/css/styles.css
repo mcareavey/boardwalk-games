@@ -44,6 +44,34 @@ h2 {
   margin-bottom: 2rem;
 }
 
+/* Buttons */
+
+.custom-button-filled {
+  border: 2px solid var(--highlight-color);
+  background-color: var(--highlight-color);
+  color: white;
+}
+
+.custom-button-filled:hover {
+  border: 2px solid var(--secondary-color);
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.custom-button-outline {
+  border: 2px solid var(--highlight-color);
+  padding: 7px, 25px;
+  background-color: transparent;
+  color: var(--highlight-color);
+}
+
+.custom-button-outline:hover {
+  border: 2px solid var(--highlight-color);
+  padding: 7px, 25px;
+  background-color: var(--highlight-color);
+  color: white;
+}
+
 /* Navbar */
 
 #navbar {
@@ -72,6 +100,32 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
+/* Events Section */
+
+#events p {
+  color: var(--primary-color);
+}
+
+#events .table {
+  box-shadow: none;
+  color: var(--primary-color);
+  background-color: transparent;
+}
+
+#events #student-discount-flash {
+  color: white;
+  background-color: var(--highlight-color);
+  font-weight: bold;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 3px 0;
+}
+
+#events .btn {
+  margin-top: 2rem;
+  min-width: 130px;
+}
+
 /* Game Library Page */
 
 #new-games .card,
@@ -89,6 +143,13 @@ h2 {
 
 #fav-games .card {
   margin-bottom: 1.5rem;
+}
+
+/* Board Game Booking Form Section */
+
+#boardgame-booking-form .btn {
+  display: block;
+  margin-left: auto;
 }
 
 /* Footer / Contact Us */
