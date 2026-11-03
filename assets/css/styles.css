@@ -17,6 +17,7 @@
 body {
   font-family: var(--primary-font);
   color: var(--secondary-color);
+  padding-top: 57.15px; /* height of navbar */
 }
 
 h1,
