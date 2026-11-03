@@ -72,6 +72,66 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
+/* Game Library Page */
+
+#new-games .card,
+#fav-games .card {
+  border: none;
+}
+
+/* New Games Section */
+
+#new-games .card {
+  margin-bottom: 1.5rem;
+}
+
+/* Favourite Games Section */
+
+#fav-games .card {
+  margin-bottom: 1.5rem;
+}
+
+/* Footer / Contact Us */
+
+#contact {
+  background-color: var(--primary-color);
+  color: white;
+  padding-bottom: 3rem;
+}
+
+#contact h2 {
+  color: white;
+  padding-top: 2rem;
+}
+
+#contact .sub-heading-color {
+  color: var(--light-highlight-color);
+}
+
+#contact i,
+#contact .svg-inline--fa {
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  margin-right: 15px;
+}
+
+#contact .social-links a {
+  color: var(--light-highlight-color);
+  font-size: 2rem;
+  margin-right: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+#contact .social-links .svg-inline--fa {
+  color: inherit;
+  font-size: inherit;
+  margin-right: 0;
+}
+
+#contact .social-links a:hover {
+  color: var(--secondary-color);
+}
+
 /* Grid visualisation CSS for testing */
 
 /* .container,
@@ -93,6 +153,15 @@ h2 {
   #services .card-body {
     min-height: 191px;
   }
+
+  /* Make all game library cards the same height */
+  #new-games .card-body {
+    min-height: auto;
+  }
+
+  #fav-games .card-body {
+    min-height: 310px;
+  }
 }
 
 /* Large Screens - >992px - small laptops and up */
@@ -100,6 +169,15 @@ h2 {
 @media screen and (min-width: 992px) {
   /* make all cards the same height */
   #services .card-body {
+    min-height: auto;
+  }
+
+  /* Make all game library cards the same height */
+  #new-games .card-body {
+    min-height: auto;
+  }
+
+  #fav-games .card-body {
     min-height: auto;
   }
 }
@@ -111,13 +189,31 @@ h2 {
   #services .card-body {
     min-height: 220px;
   }
+
+  /* Make all game library cards the same height */
+  #new-games .card-body {
+    min-height: auto;
+  }
+
+  #fav-games .card-body {
+    min-height: 340px;
+  }
 }
 
-/* XLarge Screens - >1200px - small laptops and up */
+/* XLarge Screens - >1400px - small laptops and up */
 
 @media screen and (min-width: 1400px) {
   /* make all cards the same height */
   #services .card-body {
     min-height: 195px;
+  }
+
+  /* Make all game library cards the same height */
+  #new-games .card-body {
+    min-height: auto;
+  }
+
+  #fav-games .card-body {
+    min-height: 315px;
   }
 }
